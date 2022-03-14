@@ -2,7 +2,7 @@ noseX = 0;
 noseY = 0;
 function preLoad()
 {
-
+    clown_nose = loadImage("clown_nose.png");
 }
 
 function setup()
@@ -21,8 +21,8 @@ function draw()
 image(video, 0, 0, 500, 500);
 fill("#eb3734");
 stroke("#0a0a0a");
-circle(nose.x, nose.y, 20);
-
+circle(noseX, noseY, 20);
+image(clown_nose, noseX, noseY, 20, 20);
 }
 
 function take_snapshot()
